@@ -7,7 +7,7 @@ After packaging the above items, copy them to the EXT "ext-lib/" folder of the s
 
 将上面的项目打包后，复制到sharding-proxy5项目的ext-lib/文件夹下，并修改分片规则配置文件config-sharding.yaml
 
-`
+```java
 rules:
 - !SHARDING
   tables:
@@ -23,4 +23,4 @@ rules:
   shardingAlgorithms:
     wx_user_complex:
       type: WxUserShardingAlgorithm
-`
+```
