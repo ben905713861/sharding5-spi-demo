@@ -23,6 +23,9 @@ rules:
         keyGeneratorName: snowflake
   shardingAlgorithms:
     #most important!The type is configure in SPI style jar file
+    #"src/main/java/com/dayoo/huodong/WxUserShardingAlgorithm.java",method "String getType()"
+    #using SPI style must create file in
+    #"src/main/resources/META-INF/services/org.apache.shardingsphere.sharding.spi.ShardingAlgorithm"
     wx_user_complex:
       type: WxUserShardingAlgorithm
 ```
